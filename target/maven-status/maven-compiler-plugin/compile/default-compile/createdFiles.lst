@@ -1,0 +1,13 @@
+coom/anthony/hadoop/WordCountWithCleanDirApp$MyReducer.class
+coom/anthony/hadoop/WordCountWithCleanDirApp$MyMapper.class
+coom/anthony/hadoop/WordCountWithPartitionerApp.class
+coom/anthony/hadoop/WordCountWithCombinerApp$MyReducer.class
+coom/anthony/hadoop/WordCountApp$MyReducer.class
+coom/anthony/hadoop/WordCountApp.class
+coom/anthony/hadoop/WordCountApp$MyMapper.class
+coom/anthony/hadoop/WordCountWithPartitionerApp$MyMapper.class
+coom/anthony/hadoop/WordCountWithPartitionerApp$MyReducer.class
+coom/anthony/hadoop/WordCountWithCleanDirApp.class
+coom/anthony/hadoop/WordCountWithPartitionerApp$MyPartitioner.class
+coom/anthony/hadoop/WordCountWithCombinerApp.class
+coom/anthony/hadoop/WordCountWithCombinerApp$MyMapper.class
