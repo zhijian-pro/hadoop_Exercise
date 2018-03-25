@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22f05417-3f79-42d9-9d96-ccaac5f80f40" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/coom/anthony/hadoop/WordCountApp.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coom/anthony/hadoop/App.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/coom/anthony/hadoop/hdfs/HDFSAPPTEST$1.class" afterPath="$PROJECT_DIR$/target/test-classes/coom/anthony/hadoop/hdfs/HDFSAPPTEST$1.class" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/coom/anthony/hadoop/hdfs/HDFSAPPTEST.class" afterPath="$PROJECT_DIR$/target/test-classes/coom/anthony/hadoop/hdfs/HDFSAPPTEST.class" />
     </list>
@@ -535,7 +533,7 @@
       <workItem from="1521871088759" duration="5472000" />
       <workItem from="1521880520847" duration="451000" />
       <workItem from="1521943393917" duration="1619000" />
-      <workItem from="1521945334992" duration="2605000" />
+      <workItem from="1521945334992" duration="2843000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1521944937211</created>
@@ -544,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521944937211</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Wordcount-1.0">
+      <created>1521948565410</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521948565410</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -580,7 +585,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10572000" />
+    <option name="totallyTimeSpent" value="10810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -592,9 +597,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.50214136" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18147752" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.49785867" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30429733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12576064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -651,7 +656,8 @@
   <component name="VcsManagerConfiguration">
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Wordcount-1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wordcount-1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
