@@ -1,4 +1,4 @@
-package coom.anthony.hadoop;
+package com.anthony.hadoop;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -7,7 +7,6 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -19,7 +18,7 @@ import java.io.IOException;
  * @Date: Created in 10:36 2018/3/25
  * @Author: Anthony_Duan
  */
-public class WordCountWithPartitionerApp {
+public class WordCountWithCombinerApp {
 
     /**
      * map:读取输入的文件
@@ -59,31 +58,6 @@ public class WordCountWithPartitionerApp {
         }
     }
 
-    /**
-     * 设置分区类
-     */
-    public static class MyPartitioner extends Partitioner<Text,LongWritable>{
-
-        @Override
-        public int getPartition(Text key, LongWritable value, int numPartitions) {
-            if (key.toString().endsWith("hadoop")){
-                return 0;
-            }
-            if (key.toString().equals("java")){
-                return 1;
-            }
-            if (key.toString().equals("spark")){
-                return 2;
-            }
-            if (key.toString().equals("flink")){
-                return 3;
-            }
-            return 4;
-        }
-    }
-
-
-
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 //        创建Configuration
         Configuration configuration = new Configuration();
@@ -102,7 +76,7 @@ public class WordCountWithPartitionerApp {
         Job job = Job.getInstance(configuration,"wordcount");
 
 //        设置job的处理类
-        job.setJarByClass(WordCountWithPartitionerApp.class);
+        job.setJarByClass(WordCountWithCombinerApp.class);
 //        设置作业的输入路径
         FileInputFormat.setInputPaths(job,new Path(args[0]));
 
@@ -114,12 +88,6 @@ public class WordCountWithPartitionerApp {
 
 //        通过job设置combiner处理类 逻辑上和reduce一样
         job.setCombinerClass(MyReducer.class);
-
-
-//        设置分区参数
-        job.setPartitionerClass(MyPartitioner.class);
-//        设置5个reduce 每一个分区一个
-        job.setNumReduceTasks(5);
 
 
 //        设置reduce相关参数

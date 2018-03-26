@@ -1,6 +1,7 @@
-package coom.anthony.hadoop;
+package com.anthony.hadoop;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -13,11 +14,11 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import java.io.IOException;
 
 /**
- * @Description: 使用MapReduce开发Wordcount程序
+ * @Description: 使用MapReduce开发Wordcount程序 添加自动清理已经存在目录方法
  * @Date: Created in 10:36 2018/3/25
  * @Author: Anthony_Duan
  */
-public class WordCountApp {
+public class WordCountWithCleanDirApp {
 
     /**
      * map:读取输入的文件
@@ -61,11 +62,21 @@ public class WordCountApp {
 //        创建Configuration
         Configuration configuration = new Configuration();
 
+
+//        准备清理已经存在的输出目录
+        Path outputPath = new Path(args[1]);
+
+        FileSystem fileSystem = FileSystem.get(configuration);
+        if (fileSystem.exists(outputPath)){
+            fileSystem.delete(outputPath,true);
+            System.out.println("output file exists,but is has deleted");
+        }
+
 //        创建job   抛出异常快捷键 alt+enter
         Job job = Job.getInstance(configuration,"wordcount");
 
 //        设置job的处理类
-        job.setJarByClass(WordCountApp.class);
+        job.setJarByClass(WordCountWithCleanDirApp.class);
 //        设置作业的输入路径
         FileInputFormat.setInputPaths(job,new Path(args[0]));
 

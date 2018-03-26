@@ -1,4 +1,5 @@
-/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/coom/anthony/hadoop/WordCountWithCleanDirApp.java
-/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/coom/anthony/hadoop/WordCountApp.java
-/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/coom/anthony/hadoop/WordCountWithPartitionerApp.java
-/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/coom/anthony/hadoop/WordCountWithCombinerApp.java
+/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/com/anthony/hadoop/WordCountApp.java
+/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/com/anthony/hadoop/WordCountWithCleanDirApp.java
+/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/com/anthony/hadoop/WordCountWithPartitionerApp.java
+/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/com/anthony/project/MRUserAgent.java
+/Users/duanjiaxing/IdeaProjects/hadooptrain/src/main/java/com/anthony/hadoop/WordCountWithCombinerApp.java
