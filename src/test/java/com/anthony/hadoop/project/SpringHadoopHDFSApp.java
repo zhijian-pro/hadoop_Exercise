@@ -39,7 +39,7 @@ public class SpringHadoopHDFSApp {
      */
     @Test
     public void mkdir() throws Exception{
-        fileSystem.mkdirs(new Path("/springhdfs"));
+        fileSystem.mkdirs(new Path("/Maven"));
     }
 
 
